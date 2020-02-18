@@ -5,7 +5,8 @@ namespace Switch.Domain.Entities
 {
     public class Usuario
     {
-        public int Id { get; private set; } // como private somente uma outra classe neste arquivo ira alterar o Id, de forma externa nao vai ser possivel
+        // como private somente uma outra classe neste arquivo ira alterar o Id, de forma externa nao vai ser possivel
+        public int Id { get; private set; } 
         public string Nome { get; set; }
         public string SobreNome { get; set; }
         public string Email { get; set; }
@@ -13,6 +14,7 @@ namespace Switch.Domain.Entities
         public DateTime DataNascimento { get; set; }
         public SexoEnum Sexo { get; set; }
         public string UrlFoto { get; set; }
-
+        //public int MyProperty { get; set; }
+        //public int MyProperty2 { get; set; }
     }
 }
