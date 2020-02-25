@@ -15,19 +15,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - API", "4 - API", "{643F
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Presentation", "5 - Presentation", "{DA986864-10A1-441A-AB3C-603874E2A154}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Switch.Domain", "Switch.Domain\Switch.Domain.csproj", "{56CA3444-6125-4D73-92FF-2B0B0E4CC928}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Switch.Domain", "Switch.Domain\Switch.Domain.csproj", "{56CA3444-6125-4D73-92FF-2B0B0E4CC928}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Switch.Domain.Tests", "Switch.Domain.Tests\Switch.Domain.Tests.csproj", "{EA73F696-7C79-462D-97CF-45170AB4FBEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Switch.Domain.Tests", "Switch.Domain.Tests\Switch.Domain.Tests.csproj", "{EA73F696-7C79-462D-97CF-45170AB4FBEA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.1 - CrossCutting", "2.1 - CrossCutting", "{BCBA2523-886A-45ED-9C28-2C6AC739AA1A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.2 - Data", "2.2 - Data", "{FCE3B4BC-553C-48A2-B634-DB6E9FC15DF1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Switch.Infra.Data", "Switch.Infra.Data\Switch.Infra.Data.csproj", "{4903B9C5-07BE-4658-86FE-9E68F4939D0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Switch.Infra.Data", "Switch.Infra.Data\Switch.Infra.Data.csproj", "{4903B9C5-07BE-4658-86FE-9E68F4939D0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Switch.Application", "Switch.Application\Switch.Application.csproj", "{544FD6E5-76B5-46C4-A765-2AD5D7772D52}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Switch.Application", "Switch.Application\Switch.Application.csproj", "{544FD6E5-76B5-46C4-A765-2AD5D7772D52}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Switch.API", "Switch.API\Switch.API.csproj", "{A189002C-FEA1-4173-812B-2817A8535602}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Switch.API", "Switch.API\Switch.API.csproj", "{A189002C-FEA1-4173-812B-2817A8535602}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwitchApp", "SwitchApp\SwitchApp.csproj", "{A1D2331A-847A-47B4-A60B-9F985FE50B3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logging", "Logging\Logging.csproj", "{263A313E-8976-42E8-A882-BFA11B991285}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +59,14 @@ Global
 		{A189002C-FEA1-4173-812B-2817A8535602}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A189002C-FEA1-4173-812B-2817A8535602}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A189002C-FEA1-4173-812B-2817A8535602}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1D2331A-847A-47B4-A60B-9F985FE50B3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1D2331A-847A-47B4-A60B-9F985FE50B3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1D2331A-847A-47B4-A60B-9F985FE50B3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1D2331A-847A-47B4-A60B-9F985FE50B3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{263A313E-8976-42E8-A882-BFA11B991285}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{263A313E-8976-42E8-A882-BFA11B991285}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{263A313E-8976-42E8-A882-BFA11B991285}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{263A313E-8976-42E8-A882-BFA11B991285}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,6 +79,8 @@ Global
 		{4903B9C5-07BE-4658-86FE-9E68F4939D0E} = {FCE3B4BC-553C-48A2-B634-DB6E9FC15DF1}
 		{544FD6E5-76B5-46C4-A765-2AD5D7772D52} = {E0185EFC-49C0-4F88-854E-198B801CCF80}
 		{A189002C-FEA1-4173-812B-2817A8535602} = {643F43DE-0122-4661-BB5F-49C210D05D92}
+		{A1D2331A-847A-47B4-A60B-9F985FE50B3A} = {DA986864-10A1-441A-AB3C-603874E2A154}
+		{263A313E-8976-42E8-A882-BFA11B991285} = {BCBA2523-886A-45ED-9C28-2C6AC739AA1A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0B5240AD-3F59-4223-845C-4465F374516C}

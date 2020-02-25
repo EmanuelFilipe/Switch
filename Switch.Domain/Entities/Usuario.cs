@@ -16,23 +16,27 @@ namespace Switch.Domain.Entities
         public SexoEnum Sexo { get; set; }
         public string UrlFoto { get; set; }
 
+        // x 1
         public virtual Identificacao Identificacao { get; set; }
         public virtual StatusRelacionamento StatusRelacionamento { get; set; }
         public virtual ProcurandoPor ProcurandoPor { get; set; }
-        public virtual ICollection<Postagem> Postagens { get; set; } //= new List<Postagem>();
-        public virtual ICollection<UsuarioGrupo> UsuarioGrupos { get; set; } //= new List<UsuarioGrupo>();
-        public virtual ICollection<LocalTrabalho> LocaisTrabalho { get; set; } //= new List<LocalTrabalho>();
-        public virtual ICollection<InstituicaoEnsino> InstituicoesEnsino { get; set; } //= new List<InstituicaoEnsino>();
-        public virtual ICollection<Amigo> Amigos { get; set; } //= new List<Amigo>();
-        public virtual ICollection<Comentario> Comentarios { get; set; } //= new List<Comentario>();
 
-        public Usuario()
-        {
-            Postagens = new List<Postagem>();
-            UsuarioGrupos = new List<UsuarioGrupo>();
-            LocaisTrabalho = new List<LocalTrabalho>();
-            InstituicoesEnsino = new List<InstituicaoEnsino>();
-            Amigos = new List<Amigo>();
-        }
+
+        // x N
+        public virtual ICollection<Postagem> Postagens { get; set; } = new List<Postagem>();
+        public virtual ICollection<UsuarioGrupo> UsuarioGrupos { get; set; } = new List<UsuarioGrupo>();
+        public virtual ICollection<LocalTrabalho> LocaisTrabalho { get; set; } = new List<LocalTrabalho>();
+        public virtual ICollection<InstituicaoEnsino> InstituicoesEnsino { get; set; } = new List<InstituicaoEnsino>();
+        public virtual ICollection<Amigo> Amigos { get; set; } = new List<Amigo>();
+        public virtual ICollection<Comentario> Comentarios { get; set; } = new List<Comentario>();
+
+        //public Usuario()
+        //{
+        //    Postagens = new List<Postagem>();
+        //    UsuarioGrupos = new List<UsuarioGrupo>();
+        //    LocaisTrabalho = new List<LocalTrabalho>();
+        //    InstituicoesEnsino = new List<InstituicaoEnsino>();
+        //    Amigos = new List<Amigo>();
+        //}
     }
 }
